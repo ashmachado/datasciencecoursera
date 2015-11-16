@@ -84,6 +84,4 @@ extractdatamean <- dcast(datamelt, formula = Subject + Activity ~ variable, mean
 write.table(extractdatamean, file = "tidydata.txt", row.names = FALSE)
 
 ##Remove all objects
-rm(activityLabel);rm(feature);rm(trainingsubjects); rm(testsubjects); rm(mergedSubjects);
-rm(trainingdata); rm(trainingLabel); rm(testdata); rm(testLabel); rm(mergeddata); rm(mergeddatalabel); 
-rm(mergedactivityDF); rm(datamelt);rm(extractdata);rm(extractdatamean)
+rm(list = ls())
