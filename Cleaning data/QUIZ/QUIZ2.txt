@@ -1,0 +1,67 @@
+Answer 1:
+
+
+install.packages("httr")
+library(httr)
+install.packages("stringi")
+install.packages("httpuv")
+library(httr)
+
+#    Replace your key and secret below. to application.
+> myapp <- oauth_app("github",key = "6cdd48a8dbc3b470af21",secret = "983ed3f33a52815c644849705f312f4898eb213c")
+
+# 3. Get OAuth credentials
+> github_token <-  oauth2.0_token(oauth_endpoints("github"), myapp, cache = FALSE)
+		or 
+github_token <-  oauth2.0_token(oauth_endpoints("github"), myapp)    Select 1
+
+# 4. Use API
+> gtoken <- config(token = github_token)
+> req <- GET(url = "https://api.github.com/users/jtleek/repos",gtoken)
+> stop_for_status(req)
+> content(req)
+
+2013-11-07T13:25:07Z
+
+
+Answer 2: 
+install.packages(sqldf)
+library(sqldf)
+sqldf("select pwgtp1 from acs where AGEP < 50")
+
+Answer 3: 
+sqldf("select distinct AGEP from acs")
+
+
+Answer 4:
+con <- url("http://biostat.jhsph.edu/~jleek/contact.html")
+> close(con)
+head(nchar(htmlcode), n = 10)
+head(nchar(htmlcode), n = 20)
+head(nchar(htmlcode), n = 30)
+head(nchar(htmlcode), n = 100)
+
+Answer 5:
+
+This requires data to be read from a fixed width file format
+Skip the first 4 rows and split data based on the character widths. 
+read.fwf will convert the data in the fixed width file format to a data frame. 
+
+con <- url("https://d396qusza40orc.cloudfront.net/getdata%2Fwksst8110.for")
+
+tef <- read.fwf(con,  widths=c(-1,9,-5,4,-1,3,-5,4,-1,3,-5,4,-1,3,-5,4,-1,3) , skip = 4) 
+
+> str(tef)
+'data.frame':	1254 obs. of  9 variables:
+ $ V1: Factor w/ 1254 levels "01APR1992","01APR1998",..: 96 385 673 961 1236 259 548 836 1124 273 ...
+ $ V2: num  23.4 23.4 24.2 24.4 25.1 25.8 25.9 26.1 26.1 26.7 ...
+ $ V3: num  0.4 0.8 0.3 0.5 0.2 0.2 0.1 0.1 0.2 0.3 ...
+ $ V4: num  25.1 25.2 25.3 25.5 25.8 26.1 26.4 26.7 26.7 26.7 ...
+ $ V5: num  0.3 0.3 0.3 0.4 0.2 0.1 0 0.2 0.1 0.2 ...
+ $ V6: num  26.6 26.6 26.5 26.5 26.7 26.8 26.9 27.1 27.2 27.3 ...
+ $ V7: num  0 0.1 0.1 0.1 0.1 0.1 0.2 0.3 0.3 0.2 ...
+ $ V8: num  28.6 28.6 28.6 28.4 28.4 28.4 28.5 28.9 29 28.9 ...
+ $ V9: num  0.3 0.3 0.3 0.2 0.2 0.3 0.4 0.8 0.8 0.7 ...
+
+>sum(tef[,4])
+[1] 32426.7

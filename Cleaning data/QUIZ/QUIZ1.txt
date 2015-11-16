@@ -1,0 +1,39 @@
+First attempt:
+
+install.packages("rJava")
+install.packages("xlsx")
+library("xlsx")
+
+
+Answer 1: Formula : > count(filter(amComDF, VAL >= 24))
+		Source: local data frame [1 x 1]
+
+      	n
+  		(int)
+		1    53
+
+
+Answer 3:
+> ngapdata <- read.xlsx(file = "RProgData/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex = 1, rowIndex = 18:23, colIndex = 7:15)
+> ngapdata
+    Zip CuCurrent PaCurrent PoCurrent      Contact Ext          Fax email Status
+1 74136         0         1         0 918-491-6998   0 918-491-6659    NA      1
+2 30329         1         0         0 404-321-5711  NA         <NA>    NA      1
+3 74136         1         0         0 918-523-2516   0 918-523-2522    NA      1
+4 80203         0         1         0 303-864-1919   0         <NA>    NA      1
+5 80120         1         0         0 345-098-8890 456         <NA>    NA      1
+> sum(ngapdata$Zip*ngapdata$Ext, na.rm = TRUE)
+[1] 36534720
+
+
+Answer 4:
+
+> fileURL <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
+
+> xdoc <- xmlInternalTreeParse(fileURL,useInternalNodes = TRUE)
+
+> rootnode <- xmlRoot(xdoc)
+
+> zipcode <- xpathApply(rootnode,"//zipcode",xmlValue)
+
+> length(zipcode[zipcode == 21231])
