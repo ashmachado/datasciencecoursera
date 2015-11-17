@@ -25,6 +25,18 @@
 	   average of each variable for each activity and each subject. 
 
 ###Script execution
-
-######Script execution
+	1. Set working directory in R to the location where run_analysis.R file exists 
+	2. Type the command -  source("run_analysis.R") and click on Enter.
+	3. Below print statements are displayed based on execution.
+		[1] "Start of run_analysis.R execution"
+		[1] "Data merge completed"
+		[1] "Data extraction completed"
+		[1] "Tidy Data set completed"
+		[1] "Tidy Data written to file - tidydata.txt"
+		[1] "End of run_analysis.R execution"
 	
+	
+###Cleaned Data
+Cleaned and tidied dataset exists in working dir folder with file name: tidydata.txt. 
+It contains one row for each subject and activity combination with mean observation for 
+each feature(variable) that was a mean or standard deviation reading from original data.
