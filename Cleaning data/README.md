@@ -23,5 +23,8 @@
 	8. Adds column Subjects and Activity to the extracted data set.
 	9. From the data set extracted in step 8, creates a independent tidy data set with the 
 	   average of each variable for each activity and each subject. 
-	   
+
+###Script execution
+
+######Script execution
 	
