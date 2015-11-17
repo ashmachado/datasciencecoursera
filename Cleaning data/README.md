@@ -2,8 +2,7 @@
 
 ##run_analysis.R
 
-###Script Description : 
-The script does the following getting and cleaning tasks- 
+###Script Description : The script does the following getting and cleaning tasks- 
 	1. Reads data from two data sets (training and test), which are in text format.
 	2. Merges the data read from the data sets
 	3. Attaches column names and Adds two new columns - Subject and Activity. 
