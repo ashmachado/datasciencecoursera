@@ -8,8 +8,7 @@ The script does the following getting and cleaning tasks-
 	2. Merges the data read from the data sets
 	3. Attaches column names and Adds two new columns - Subject and Activity. 
 	5. Extracts measurements on the mean and standard deviation for each measurement variable(column).
-	6. Creates a independent tidy data set based on the average of each variable for 
-	   each activity and each subject.
+	6. Creates a independent tidy data set based on the average of each variable for each activity and each subject.
 	
 ###Script process: 
 	1. Checks if relevant R packages - sqldf, plyr, reshape and reshape2 - are loaded or not.
