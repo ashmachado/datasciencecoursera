@@ -2,10 +2,10 @@
 
 
 Subject		9
-   Subject who performed the activity. Examples:  "Subject 1", "Subject 2"
+   ##Subject who performed the activity. Examples:  "Subject 1", "Subject 2"
 
 Activity	16
-   Description of Activity.Values: LAYING, SITTING, STANDING, WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS.
+   ##Description of Activity.Values: LAYING, SITTING, STANDING, WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS.
    
 tBodyAcc-mean()-X 	16
 	Mean value of all observations for each subject and activity combination
