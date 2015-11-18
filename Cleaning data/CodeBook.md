@@ -5,7 +5,7 @@
 
 #####Activity Column size: 16 Description of Activity.Values: LAYING, SITTING, STANDING, WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS.
    
-#####Mean columns display mean value of all observations for each subject and activity combination. 
+####Below columns display mean value of all observations for each subject and activity combination. 
 
    
 #####tBodyAcc-mean()-X 	Column size: 16
