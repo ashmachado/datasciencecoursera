@@ -1,13 +1,10 @@
 #Code Book for Getting and Cleaning Data Assignment. Description of tidy dataset.
 
 
-#####Subject		Column size 9
-#####  Subject who performed the activity. Examples:  "Subject 1", "Subject 2"
+#####Subject Column size 9 Subject who performed the activity. Examples:  "Subject 1", "Subject 2"
 
-#####Activity	Column size: 16
-#####  Description of Activity.Values: LAYING, SITTING, STANDING, WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS.
+#####Activity Column size: 16 Description of Activity.Values: LAYING, SITTING, STANDING, WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS.
    
-
 #####Mean columns display mean value of all observations for each subject and activity combination. 
 
    
