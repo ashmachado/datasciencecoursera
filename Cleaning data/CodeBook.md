@@ -1,7 +1,7 @@
 #Code Book for Getting and Cleaning Data Assignment. Description of tidy dataset.
 
 
-Column Name: Subject. Column size: 9. 
+1. Column Name: Subject. Column size: 9. 
 Description: Subject who performed the activity. Examples:  "Subject 1", "Subject 2"
 
 
