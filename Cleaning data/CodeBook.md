@@ -5,56 +5,56 @@
 Description: Subject who performed the activity. Examples:  "Subject 1", "Subject 2"
 
 
-Column Name: Activity Column size: 16 
+2. Column Name: Activity Column size: 16 
 Description of Activity.Values: LAYING, SITTING, STANDING, WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS.
    
 
 ######Below columns display mean value of all observations for each subject and activity combination. 
 
    
-Column Name:tBodyAcc-mean()-X 	Column size: 16
+3. Column Name:tBodyAcc-mean()-X 	Column size: 16
 	
 
-Column Name:tBodyAcc-mean()-Y 	Column size: 16
+4. Column Name:tBodyAcc-mean()-Y 	Column size: 16
 	
 
-Column Name:tBodyAcc-mean()-Z 	Column size: 16
+5. Column Name:tBodyAcc-mean()-Z 	Column size: 16
 	
 
-Column Name:tBodyAcc-std()-X 	Column size: 16
+6. Column Name:tBodyAcc-std()-X 	Column size: 16
 	
 
-Column Name:tBodyAcc-std()-Y	Column size: 16
+7. Column Name:tBodyAcc-std()-Y	Column size: 16
 	
 
-Column Name:tBodyAcc-std()-Z	Column size: 16
+8. Column Name:tBodyAcc-std()-Z	Column size: 16
 	
 
-Column Name:tGravityAcc-mean()-X	Column size: 16
+9. Column Name:tGravityAcc-mean()-X	Column size: 16
 	
 
-Column Name:tGravityAcc-mean()-Y	Column size: 16
+10.Column Name:tGravityAcc-mean()-Y	Column size: 16
 	
 
-Column Name:tGravityAcc-mean()-Z	Column size: 16
+11.Column Name:tGravityAcc-mean()-Z	Column size: 16
 	
 
-Column Name:tGravityAcc-std()-X	Column size: 16 
+12.Column Name:tGravityAcc-std()-X	Column size: 16 
 	
 
-Column Name:tGravityAcc-std()-Y	Column size: 16 
+11.Column Name:tGravityAcc-std()-Y	Column size: 16 
 	
 
-Column Name:tGravityAcc-std()-Z	Column size: 16 
+12.Column Name:tGravityAcc-std()-Z	Column size: 16 
 	
 
-Column Name:tBodyAccJerk-mean()-X	Column size: 16
+13.Column Name:tBodyAccJerk-mean()-X	Column size: 16
 	
 	
-Column Name:tBodyAccJerk-mean()-Y	Column size: 16
+14.Column Name:tBodyAccJerk-mean()-Y	Column size: 16
 	
 	
-Column Name:tBodyAccJerk-mean()-Z	Column size: 16 
+15.Column Name:tBodyAccJerk-mean()-Z	Column size: 16 
 	
 	
 Column Name:tBodyAccJerk-std()-X 	Column size: 16
