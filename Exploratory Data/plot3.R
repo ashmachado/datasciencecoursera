@@ -1,5 +1,9 @@
+## Exploratory Data Project 1- plot3.R
 ## Working directory should be set at the location of zip file - exdata-data-household_power_consumption.zip
+## Place this file in the same location
+## Run this code by using command :  source("plot3.R")
 
+#Unzips the file
 unzip(zipfile = "exdata-data-household_power_consumption.zip")
 fileName <- "household_power_consumption.txt"
 
