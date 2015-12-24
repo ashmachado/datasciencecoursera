@@ -29,7 +29,7 @@ motorsourceDF <- NEIMotor %>% filter(fips =="24510") %>% group_by(year) %>% summ
 ##Drawing plot to show total annual emissions from PM2.5 Emissions from Motor Vehicle sources
 ## xaxt = 'n' is to draw the X axis seperately
 qplot(year,TotalPol,data = motorsourceDF,geom = 'line', xaxt = 'n', 
-      xlab = 'Year', ylab = 'TotalPM2.5 Emissions', main = "PM2.5 Emissions from Motor Vehicle sources")
+      xlab = 'Year', ylab = 'TotalPM2.5 Emissions', main = "Baltimore: PM2.5 Emissions from Motor Vehicle sources")
 
 
 ##Drawing plot to show total annual emissions from PM2.5 Emissions from Motor Vehicle sources
