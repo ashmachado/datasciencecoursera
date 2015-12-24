@@ -3,7 +3,7 @@
 
 ## Working directory should be set at the location of zip file - exdata-data-NEI_data.zip
 ## Place this file in the same location
-## Run this code by using command :  source("plot1.R")
+## Run this code by using command :  source("plot2.R")
 
 
 if(!require(dplyr)) {
